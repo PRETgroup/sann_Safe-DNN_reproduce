@@ -1,0 +1,25 @@
+{
+    "types": {
+        "XOR": {
+            "architecture": "./memocode_xor.json",
+            "weights": "./memocode_xor.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "XOR1",
+            "type": "XOR",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "XOR1[0:3]",
+            "src": "pre(inputs[0:2])"
+        },
+        {
+            "dst": "outputs[0]",
+            "src": "pre(XOR1[0:3])"
+        }
+    ]
+}

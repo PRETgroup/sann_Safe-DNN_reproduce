@@ -1,0 +1,3 @@
+double aibro_c_l1_dense_bias[2] = {
+    0.422989, 0.657669
+};

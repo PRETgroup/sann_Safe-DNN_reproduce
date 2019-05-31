@@ -1,0 +1,15 @@
+---
+- analysis-entry: mnn_response
+  source: platin
+  cycles: 38911
+  cache-max-cycles-instr: 17157
+  cache-min-hits-instr: 104
+  cache-max-misses-instr: 118
+  cache-max-cycles-stack: 0
+  cache-max-misses-stack: 0
+  cache-max-cycles-data: 2793
+  cache-min-hits-data: 0
+  cache-max-misses-data: 85
+  cache-max-stores-data: 48
+  cache-unknown-address-data: 133
+  cache-max-cycles: 19950

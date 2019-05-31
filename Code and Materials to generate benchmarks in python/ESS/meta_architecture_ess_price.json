@@ -1,0 +1,25 @@
+{
+    "types": {
+        "ESS_PRICE": {
+            "architecture": "./memocode_ess_price.json",
+            "weights": "./memocode_ess_price.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "ESS_PRICE",
+            "type": "ESS_PRICE",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "ESS_PRICE[0:10]",
+            "src": "pre(inputs[0:10])"
+        },
+        {
+            "dst": "outputs[0]",
+            "src": "pre(ESS_PRICE[0:5])"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "types": {
+        "DARKNET": {
+            "architecture": "./memocode_darknet.json",
+            "weights": "./memocode_darknet.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "DARKNET",
+            "type": "DARKNET",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "DARKNET[0:28][0:28][0]",
+            "src": "pre(inputs[0:28][0:28][0])"
+        },
+        {
+            "dst": "outputs[0]",
+            "src": "pre(DARKNET[0])"
+        }
+    ]
+}

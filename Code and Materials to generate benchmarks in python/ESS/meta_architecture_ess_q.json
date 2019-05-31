@@ -1,0 +1,25 @@
+{
+    "types": {
+        "ESS_Q": {
+            "architecture": "./memocode_ess_q.json",
+            "weights": "./memocode_ess_q.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "ESS_Q",
+            "type": "ESS_Q",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "ESS_Q[0:21]",
+            "src": "pre(inputs[0:21])"
+        },
+        {
+            "dst": "outputs[0:41]",
+            "src": "pre(ESS_Q[0:41])"
+        }
+    ]
+}

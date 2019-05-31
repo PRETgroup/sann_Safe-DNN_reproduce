@@ -1,0 +1,3 @@
+double ess_demand_l1_dense_bias[1] = {
+    1.421055
+};

@@ -1,0 +1,25 @@
+{
+    "types": {
+        "AIBRO_A": {
+            "architecture": "./memocode_aibro_a.json",
+            "weights": "./memocode_aibro_a.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "AIBRO_A",
+            "type": "AIBRO_A",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "AIBRO_A[0:3]",
+            "src": "pre(inputs[0:3])"
+        },
+        {
+            "dst": "outputs[0:3]",
+            "src": "pre(AIBRO_A[0:3])"
+        }
+    ]
+}

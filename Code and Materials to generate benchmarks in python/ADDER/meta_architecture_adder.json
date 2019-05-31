@@ -1,0 +1,25 @@
+{
+    "types": {
+        "ADDER": {
+            "architecture": "./memocode_adder.json",
+            "weights": "./memocode_adder.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "ADDER1",
+            "type": "ADDER",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "ADDER1[0:5]",
+            "src": "pre(inputs[0:2])"
+        },
+        {
+            "dst": "outputs[0]",
+            "src": "pre(ADDER1[0:5])"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "types": {
+        "RABBIT": {
+            "architecture": "./memocode_rabbit.json",
+            "weights": "./memocode_rabbit.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "RABBIT",
+            "type": "RABBIT",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "RABBIT[0:20]",
+            "src": "pre(inputs[0:20])"
+        },
+        {
+            "dst": "outputs[0:4]",
+            "src": "pre(RABBIT[0:4])"
+        }
+    ]
+}

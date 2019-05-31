@@ -1,0 +1,25 @@
+{
+    "types": {
+        "WOLF2": {
+            "architecture": "./memocode_wolf2.json",
+            "weights": "./memocode_wolf2.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "WOLF2",
+            "type": "WOLF2",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "WOLF2[0:20]",
+            "src": "pre(inputs[0:20])"
+        },
+        {
+            "dst": "outputs[0:8]",
+            "src": "pre(WOLF2[0:8])"
+        }
+    ]
+}

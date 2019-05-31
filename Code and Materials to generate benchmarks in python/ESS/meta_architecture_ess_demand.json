@@ -1,0 +1,25 @@
+{
+    "types": {
+        "ESS_DEMAND": {
+            "architecture": "./memocode_ess_demand.json",
+            "weights": "./memocode_ess_demand.h5"
+          }
+    },
+    "instances": [
+        {
+            "name": "ESS_DEMAND",
+            "type": "ESS_DEMAND",
+            "cluster": 0
+        }
+    ],
+    "connections": [
+        {
+            "dst": "ESS_DEMAND[0:10]",
+            "src": "pre(inputs[0:10])"
+        },
+        {
+            "dst": "outputs[0]",
+            "src": "pre(ESS_DEMAND[0:10])"
+        }
+    ]
+}

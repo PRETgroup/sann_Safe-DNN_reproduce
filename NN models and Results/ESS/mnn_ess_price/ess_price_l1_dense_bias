@@ -1,0 +1,3 @@
+double ess_price_l1_dense_bias[1] = {
+    -0.792586
+};
